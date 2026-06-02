@@ -1,0 +1,38 @@
+{
+  "name": "springgen",
+  "version": "0.0.1",
+  "description": "Generate Spring Boot backend projects in minutes.",
+  "type": "module",
+  "bin": {
+    "springgen": "./bin/springgen.js"
+  },
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "spring",
+    "spring-boot",
+    "java",
+    "backend",
+    "generator",
+    "cli",
+    "docker",
+    "gradle"
+  ],
+  "author": "SpringGen",
+  "license": "MIT",
+  "homepage": "https://app.springgen.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/springgen-dev/springgen.git",
+    "directory": "springgen-npm-preview"
+  },
+  "bugs": {
+    "url": "https://github.com/springgen-dev/springgen/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

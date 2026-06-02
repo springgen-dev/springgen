@@ -1,0 +1,43 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+group = 'org.springgen-platform'
+version = '0.0.1'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'info.picocli:picocli:4.7.6'
+	annotationProcessor 'info.picocli:picocli-codegen:4.7.6'
+
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.21.2'
+}
+
+application {
+	mainClass = 'org.springgen.cli.SpringGenCliApplication'
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+jar {
+	manifest {
+		attributes(
+				'Main-Class': 'org.springgen.cli.SpringGenCliApplication'
+		)
+	}
+
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+	from {
+		configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+	}
+}
+
