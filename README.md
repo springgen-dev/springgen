@@ -1,6 +1,6 @@
-# SpringGen — Generate Spring Boot Backends in Minutes 🚀  [![npm](https://img.shields.io/npm/v/springgen)](https://www.npmjs.com/package/springgen)[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+# SpringGen — Generate Spring Boot Backends in Minutes 🚀  [![npm](https://img.shields.io/npm/v/springgen)](https://www.npmjs.com/package/springgen) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Generate ready-to-run Spring Boot backend projects instantly — from local development setup to production deployment foundations.
+Generate production-ready Spring Boot backends instantly — from local development to Docker, CI/CD, authentication, and AWS deployment.
 
 **Free Starter via CLI** • **[🚀 Upgrade to Pro](https://app.springgen.dev)**
 
@@ -23,7 +23,7 @@ you can generate a working backend project in seconds.
 
 Think of it as:
 
-> Create React App — but for Spring Boot backend projects.
+> Like a frontend starter generator — but for production-ready Spring Boot backends.
 
 SpringGen is not just a template pack. It is a generator platform with a CLI and web UI that dynamically builds project structures based on selected configuration options.
 
@@ -37,6 +37,149 @@ SpringGen is not just a template pack. It is a generator platform with a CLI and
 * Get Docker and CI setup quickly
 * Focus on business logic instead of boilerplate
 * Go from idea to working backend faster
+
+---
+
+## 🚀 SpringGen Pro — Production Ready
+
+Stop rebuilding the same production setup for every Spring Boot project.
+
+SpringGen Pro generates a backend foundation with authentication, deployment, security, and DevOps configuration ready to go.
+
+### ⚙️ Full Config UI
+
+Choose:
+
+- Package name
+- Database
+- Docker setup
+- CI/CD
+- Security
+- Logging
+- AWS deployment options
+
+
+### 🔐 OAuth2 + Refresh Tokens
+
+Generate production-ready Spring Security:
+
+- Google OAuth2 login
+- GitHub OAuth2 login
+- JWT access tokens
+- Refresh token flow
+
+
+### 🐳 Production Docker Setup
+
+Includes:
+
+- Dockerfile
+- docker-compose.yml
+- docker-compose.prod.yml
+- Environment configuration
+- Health checks
+
+
+### 🚀 CI/CD → AWS EC2 Deploy
+
+Push code.
+
+GitHub Actions automatically:
+
+- Builds your application
+- Creates production configuration
+- Connects to EC2
+- Deploys your Docker application
+
+
+### 🖥️ Generated EC2 Deploy Script
+
+Deploy anytime with a ready-to-use script.
+
+Generated:
+
+```text
+scripts/deploy-ec2.sh
+```
+
+Handles:
+
+- Docker builds
+- Application updates
+- Container restarts
+
+Use it through GitHub Actions or run manually on EC2.
+
+
+### 🛡️ Security Hardening
+
+Includes:
+
+- CORS configuration
+- Secure headers
+- Request filtering
+- Validation
+- Production security defaults
+
+
+### 📊 Logging & Observability
+
+Includes:
+
+- Request logging
+- Structured logs
+- Production-ready logging configuration
+
+
+---
+
+## AWS EC2 Deployment Automation
+
+![SpringGen EC2 Deployment](examples/screenshots/pro-ec2-deployment-flow.png)
+
+SpringGen Pro supports two deployment workflows:
+
+### Automated Deployment
+
+```text
+GitHub Secrets
+   ↓
+Git Push
+   ↓
+GitHub Actions
+   ↓
+EC2
+   ↓
+Docker Application Running
+```
+
+Best for production workflows.
+
+
+### Manual Deployment
+
+Use the generated deploy script on EC2
+
+```bash
+# 1. One-time setup
+nano .env.prod
+
+# 2. Deploy anytime
+git pull origin main
+./scripts/deploy-ec2.sh
+```
+
+Best for manual releases, testing, and full control over deployments.
+
+---
+
+## Unlock SpringGen Pro
+
+Generate production-ready Spring Boot projects in minutes.
+
+👉 https://app.springgen.dev
+
+**$29 one-time launch pricing**
 
 ---
 
@@ -61,74 +204,8 @@ SpringGen is not just a template pack. It is a generator platform with a CLI and
 | Logging and observability setup          |       ❌ |                  ✅ |
 | Security hardening                       |       ❌ |                  ✅ |
 
-
 ---
-## Pro — Production Ready
 
-SpringGen Pro adds production-focused features for developers building deployable backend systems.
-
-Pro includes:
-
-### Production Authentication
-
-* OAuth2 login with Google and GitHub
-* JWT access tokens
-* Refresh token flow
-* Secure authentication structure
-
-👉 No need to build auth from scratch
-
-### Cloud Deployment
-
-* AWS EC2 deployment script
-* Production Docker setup
-* Environment-based deployment configuration
-
-👉 Deploy your backend in minutes
-
-### Full CI/CD
-
-* GitHub Actions build workflow
-* GitHub Actions deployment workflow
-* Production deployment automation
-
-👉 No DevOps setup needed
-
-### Security Hardening
-
-* CORS configuration
-* Security headers
-* Request filtering
-* Production-ready security configuration foundation
-
-👉 Safer defaults out of the box
-
-### Logging and Observability
-
-* Request logging
-* Structured logging setup
-* Production-friendly logging configuration
-
-### 🚀 Upgrade to SpringGen Pro
-
-Generate production-ready Spring Boot projects instantly:
-
-👉 https://app.springgen.dev
-
-Current launch pricing:
-
-**$29 one-time purchase**
-
-Includes:
-
-- OAuth2 authentication
-- Refresh token flow
-- Production configuration
-- AWS deployment automation
-- CI/CD workflows
-- Security hardening
-
----
 ## Try SpringGen Free (Starter CLI)
 
 The Starter edition is free and available through the CLI.
@@ -163,6 +240,8 @@ springgen init my-app --db=postgres
 
 ### Run the Generated Project
 
+Configure Environment variables.Update your  `.env` values.
+
 ```bash
 cd my-app
 ./gradlew bootRun
@@ -171,7 +250,7 @@ cd my-app
 Or run with Docker:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 The application starts at:
@@ -323,6 +402,16 @@ docs/
 ├── PRO-FEATURES.md
 └── FAQ.md
 ```
+### Pro Documentation
+
+SpringGen Pro generated projects include additional production guides:
+
+- AWS EC2 deployment guide
+- OAuth2 + refresh token setup
+- Production configuration guide
+- CI/CD deployment instructions
+
+Available inside generated Pro projects.
 
 ---
 
@@ -369,24 +458,17 @@ Planned future improvements:
 * More database options
 * Advanced observability modules
 
----
 
+
+---
 ## Support
 
 For support, contact:
 
-```text
 📧 support@springgen.dev
 
-🌐 [app.springgen.dev](https://app.springgen.dev)
-
-```
-
 Website:
-
-```text
-https://app.springgen.dev
-```
+🌐 https://app.springgen.dev
 
 ---
 
