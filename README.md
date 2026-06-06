@@ -21,6 +21,12 @@ Instead of spending hours configuring:
 
 you can generate a working backend project in seconds.
 
+> [!NOTE]
+> SpringGen uses a deterministic template/module engine to assemble tested Spring Boot project structures, configurations, and production-ready components.
+>
+> Generated projects come from maintained templates and predictable configurations — not runtime AI-generated code from prompts.
+
+
 Think of it as:
 
 > Like a frontend starter generator — but for production-ready Spring Boot backends.
