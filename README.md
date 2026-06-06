@@ -34,28 +34,22 @@ Think of it as:
 SpringGen is not just a template pack. It is a generator platform with a CLI and web UI that dynamically builds project structures based on selected configuration options.
 
 ---
-
-## How is SpringGen different?
+## How is SpringGen Different?
 
 ### vs Spring Initializr
 
-Spring Initializr creates the project foundation:
-- dependencies
-- build files
-- basic Spring Boot application
-
-SpringGen creates the application foundation:
-- layered backend structure
-- DTO patterns
-- exception handling
-- security scaffolding
-- Docker / CI setup
+Spring Initializr gives you a project foundation — dependencies, build files, and a basic application entry point. SpringGen starts where Initializr stops:
+* Layered architecture with controllers, services, repositories
+* DTO patterns and global exception handling
+* Security scaffolding (JWT + OAuth2)
+* Docker, CI/CD, and AWS deployment configuration
 
 ### vs JHipster
+JHipster is a full-stack generator — frontend, backend, and ongoing project management through its own ecosystem. Powerful if you want everything generated and maintained for you.
 
-JHipster is a powerful full-stack application generator with a large ecosystem, frontend generation, and many architecture choices.
+SpringGen is backend-only and disappears after generation. No frontend opinions, no generator dependencies left in your project, no new ecosystem to learn. Just clean, standard Spring Boot code you recognize and own from day one.
 
-SpringGen is a lightweight backend-focused generator for developers who want an opinionated Spring Boot starting point without adopting a larger generator ecosystem.
+> SpringGen sits between Initializr and JHipster — more structure than one, less ecosystem than the other.
 
 
 ---
