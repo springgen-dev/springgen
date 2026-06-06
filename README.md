@@ -1,6 +1,6 @@
 # SpringGen — Generate Spring Boot Backends in Minutes 🚀  [![npm](https://img.shields.io/npm/v/springgen)](https://www.npmjs.com/package/springgen) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Generate production-ready Spring Boot backends instantly — from local development to Docker, CI/CD, authentication, and AWS deployment.
+Generate production-ready Spring Boot backends instantly — Authentication, Database, Docker, CI/CD, and AWS EC2 deployment included.
 
 👉 **[Try Free via CLI](#try-springgen-free-starter-cli)** •
 🚀 **[Upgrade to Pro](https://app.springgen.dev)**
@@ -9,62 +9,63 @@ Generate production-ready Spring Boot backends instantly — from local developm
 
 ## What is SpringGen?
 
-SpringGen is a developer productivity tool that creates fully structured Spring Boot backend projects so you do not waste time on repetitive boilerplate setup.
+Every new backend service starts the same way — same structure, auth setup,
+database config, security hardening, Docker, and CI/CD pipeline. Most developers rebuild this
+from scratch or copy-paste from a previous project every single time.
 
-Instead of spending hours configuring:
+SpringGen is built around that repeated workflow.Whether you are a freelancer spinning up a new client backend,
+a founder building an MVP, or a developer starting another microservice — run the CLI or web UI, get a
+consistent production-ready backend, and start writing business logic.
 
-* Spring Boot project structure
-* Authentication scaffolding
-* Docker setup
-* Database configuration
-* CI/CD pipeline setup
-* Deployment configuration
+No copy-pasting. No forgotten configs. No "how did I set this up last time."
 
-you can generate a working backend project in seconds.
-
-> [!NOTE]
-> SpringGen uses a deterministic template/module engine to assemble tested Spring Boot project structures, configurations, and production-ready components.
->
-> Generated projects come from maintained templates and predictable configurations — not runtime AI-generated code from prompts.
-
-
-Think of it as:
-
-> Like a frontend starter generator — but for production-ready Spring Boot backends.
-
-SpringGen is not just a template pack. It is a generator platform with a CLI and web UI that dynamically builds project structures based on selected configuration options.
+SpringGen uses deterministic template/module engine to assemble
+tested Spring Boot project structures, configurations, and production-ready components.
 
 ---
 ## How is SpringGen Different?
 
 ### vs Spring Initializr
 
-Spring Initializr gives you a project foundation — dependencies, build files, and a basic application entry point. SpringGen starts where Initializr stops:
+Spring Initializr gives you a project foundation — dependencies, build files, and a basic application entry point. 
+
+SpringGen starts where Initializr stops:
 * Layered architecture with controllers, services, repositories
 * DTO patterns and global exception handling
-* Security scaffolding (JWT + OAuth2)
+* Database configuration (MySQL, PostgreSQL, MongoDB)
+* Authentication scaffolding (JWT, OAuth2)
+* Security hardening
 * Docker, CI/CD, and AWS deployment configuration
 
 ### vs JHipster
 
 JHipster is a full-stack generator — frontend, backend, and ongoing project management through its ecosystem. Powerful if you want a complete application platform with built-in conventions.
 
-SpringGen is backend-only and disappears after generation. No frontend opinions, no generator runtime dependencies left in your project, no new ecosystem to learn. 
-
-Just clean, standard Spring Boot code you recognize and own from day one.
+**SpringGen is backend-only and disappears after generation.** No frontend opinions, no generator runtime dependencies left in your project, no new ecosystem to learn. Just clean, standard Spring Boot code you recognize and own from day one.
 
 > SpringGen sits between Initializr and JHipster — more structure than one, less ecosystem than the other.
 
 ---
 
-## Why Developers Use SpringGen
+## Who is SpringGen For?
 
-Setting up a new Spring Boot project the right way takes several hours —
-project structure, security config, Docker, CI/CD pipeline,
-deployment scripts. 
+SpringGen is useful for developers who know Spring Boot but want to move faster.
 
-SpringGen does it in 30 seconds. The same structure an experienced Java developer would write,
-not a tutorial skeleton. Just open your IDE and start building your business logic.
+Ideal for:
+
+* Backend developers building SaaS products
+* Freelancers starting new client projects
+* Startup founders creating MVP backends
+* Engineers building multiple microservices
+* Developers who want consistent project structure across projects
+* Java/Spring developers who prefer writing business logic over repeating setup
+
+SpringGen may not be ideal for:
+
+* Developers looking for a Spring Boot learning tutorial
+* Teams with existing internal platform templates
+* Engineers who prefer manually configuring every project from scratch
+* Projects requiring highly customized enterprise architecture from day one
 
 ---
 
@@ -72,17 +73,17 @@ not a tutorial skeleton. Just open your IDE and start building your business log
 
 Stop rebuilding the same production setup for every Spring Boot project.
 
-SpringGen Pro generates a backend foundation with authentication, deployment, security, and DevOps configuration ready to go.
+SpringGen Pro generates a backend foundation with authentication, database, security, deployment, and DevOps configuration ready to go.
 
-### ⚙️ Full Config UI
+### ⚙️ Interactive Project Generator UI
 
 Choose:
 
 - Package name
-- Database
+- Database (MySQL, PostgreSQL)
 - Docker setup
 - CI/CD
-- Security
+- Authentication (OAuth2 + refresh tokens)
 - Logging
 - AWS deployment options
 
@@ -221,6 +222,7 @@ Generate production-ready Spring Boot projects in minutes.
 | DTO structure                            |       ✅ |                  ✅ |
 | Global exception handling                |       ✅ |                  ✅ |
 | JWT authentication scaffold              |       ✅ |                  ✅ |
+| Database configuration                   |       ✅ |                  ✅ |
 | Dockerfile                               |       ✅ |                  ✅ |
 | Docker Compose local setup               |       ✅ |                  ✅ |
 | Basic GitHub Actions CI                  |       ✅ |                  ✅ |
@@ -289,26 +291,9 @@ http://localhost:8080
 
 ---
 
-## Who is SpringGen For?
-
-SpringGen is useful for:
-
-* Backend developers building SaaS products
-* Freelancers delivering client backend systems
-* Startup founders who need to ship quickly
-* Engineers tired of repetitive setup work
-* Developers building portfolio-ready projects
-* Java/Spring developers who want a faster starting point
-
-SpringGen may not be ideal for:
-
-* Beginners expecting step-by-step Spring Boot tutorials
-* Developers who want to manually configure every file from scratch
-* Teams needing fully custom enterprise architecture generation
-
----
 
 ## How It Works
+
 
 ```text
 CLI or UI sends project configuration
