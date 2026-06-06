@@ -46,12 +46,14 @@ Spring Initializr gives you a project foundation — dependencies, build files, 
 * Docker, CI/CD, and AWS deployment configuration
 
 ### vs JHipster
-JHipster is a full-stack generator — frontend, backend, and ongoing project management through its own ecosystem. Powerful if you want everything generated and maintained for you.
 
-SpringGen is backend-only and disappears after generation. No frontend opinions, no generator dependencies left in your project, no new ecosystem to learn. Just clean, standard Spring Boot code you recognize and own from day one.
+JHipster is a full-stack generator — frontend, backend, and ongoing project management through its ecosystem. Powerful if you want a complete application platform with built-in conventions.
+
+SpringGen is backend-only and disappears after generation. No frontend opinions, no generator runtime dependencies left in your project, no new ecosystem to learn. 
+
+Just clean, standard Spring Boot code you recognize and own from day one.
 
 > SpringGen sits between Initializr and JHipster — more structure than one, less ecosystem than the other.
-
 
 ---
 
@@ -59,8 +61,9 @@ SpringGen is backend-only and disappears after generation. No frontend opinions,
 
 Setting up a new Spring Boot project the right way takes several hours —
 project structure, security config, Docker, CI/CD pipeline,
-deployment scripts. SpringGen does it in 30 seconds.
-The same structure an experienced Java developer would write,
+deployment scripts. 
+
+SpringGen does it in 30 seconds. The same structure an experienced Java developer would write,
 not a tutorial skeleton. Just open your IDE and start building your business logic.
 
 ---
