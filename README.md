@@ -2,7 +2,8 @@
 
 Generate production-ready Spring Boot backends instantly — from local development to Docker, CI/CD, authentication, and AWS deployment.
 
-**Free Starter via CLI** • **[🚀 Upgrade to Pro](https://app.springgen.dev)**
+👉 **[Try Free via CLI](#try-springgen-free-starter-cli)** •
+🚀 **[Upgrade to Pro](https://app.springgen.dev)**
 
 ---
 
@@ -56,12 +57,11 @@ SpringGen is backend-only and disappears after generation. No frontend opinions,
 
 ## Why Developers Use SpringGen
 
-* Save hours of setup time
-* Start with a real backend structure
-* Use clean layered architecture
-* Get Docker and CI setup quickly
-* Focus on business logic instead of boilerplate
-* Go from idea to working backend faster
+Setting up a new Spring Boot project the right way takes several hours —
+project structure, security config, Docker, CI/CD pipeline,
+deployment scripts. SpringGen does it in 30 seconds.
+The same structure an experienced Java developer would write,
+not a tutorial skeleton. Just open your IDE and start building your business logic.
 
 ---
 
@@ -265,7 +265,7 @@ springgen init my-app --db=postgres
 
 ### Run the Generated Project
 
-Configure Environment variables.Update your  `.env` values.
+Configure your environment — update `.env` values before running.
 
 ```bash
 cd my-app
