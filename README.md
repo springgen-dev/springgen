@@ -13,13 +13,13 @@ Every new backend service starts the same way — same structure, auth setup,
 database config, security hardening, Docker, and CI/CD pipeline. Most developers rebuild this
 from scratch or copy-paste from a previous project every single time.
 
-SpringGen is built around that repeated workflow.Whether you are a freelancer spinning up a new client backend,
+SpringGen is built around that repeated workflow. Whether you are a freelancer spinning up a new client backend,
 a founder building an MVP, or a developer starting another microservice — run the CLI or web UI, get a
 consistent production-ready backend, and start writing business logic.
 
 No copy-pasting. No forgotten configs. No "how did I set this up last time."
 
-SpringGen uses deterministic template/module engine to assemble
+SpringGen uses a deterministic template/module engine to assemble
 tested Spring Boot project structures, configurations, and production-ready components.
 
 ---
@@ -32,7 +32,7 @@ Spring Initializr gives you a project foundation — dependencies, build files, 
 SpringGen starts where Initializr stops:
 * Layered architecture with controllers, services, repositories
 * DTO patterns and global exception handling
-* Database configuration (MySQL, PostgreSQL, MongoDB)
+* Database configuration
 * Authentication scaffolding (JWT, OAuth2)
 * Security hardening
 * Docker, CI/CD, and AWS deployment configuration
@@ -73,7 +73,9 @@ SpringGen may not be ideal for:
 
 Stop rebuilding the same production setup for every Spring Boot project.
 
-SpringGen Pro generates a backend foundation with authentication, database, security, deployment, and DevOps configuration ready to go.
+SpringGen Pro unlocks unlimited production-ready Spring Boot backend generation — create as many projects as you need with authentication, database, security, deployment, and DevOps configuration ready to go.
+
+**Pay once. Generate unlimited production-ready Spring Boot projects.**
 
 ### ⚙️ Interactive Project Generator UI
 
