@@ -478,9 +478,9 @@ Planned future improvements:
 ---
 ## Support
 
-For support, contact:
+For support, 
 
-📧 support@springgen.dev
+contact: 📧 [support@springgen.dev](mailto:support@springgen.dev)
 
 Website:
 🌐 https://app.springgen.dev
