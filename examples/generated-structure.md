@@ -10,9 +10,9 @@ SpringGen generates complete Spring Boot projects based on selected options.
 starter-project/
 ├── src/main/java/
 │   ├── controller/
-│   ├── service/
-│   ├── dto/
 │   ├── security/
+│   ├── dto/
+│   ├── config/
 │   └── exception/
 │
 ├── Dockerfile
@@ -27,10 +27,12 @@ starter-project/
 ```text
 pro-project/
 ├── src/main/java/
+│   ├── config/
 │   ├── security/
 │   ├── controller/
 │   ├── service/
 │   ├── entity/
+│   ├── dto/
 │   ├── exception/
     └── repository/
 │
