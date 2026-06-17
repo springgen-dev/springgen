@@ -1,6 +1,6 @@
 # Docker Setup
 
-Starter project includes Docker support for local development.
+This project includes Docker support for local development.
 
 ---
 
@@ -116,13 +116,60 @@ If you rename the application image, use lowercase letters, numbers, and hyphens
 
 ---
 
-## 5. Apple Silicon / Intel Notes
+## 5. Docker Base Image Notes
 
-This project uses:
+This project uses a multi-stage Docker build.
+
+The build stage uses the full JDK:
 
 ```dockerfile
-FROM eclipse-temurin:21-jdk-alpine
+FROM eclipse-temurin:21-jdk-alpine AS build
 ```
+
+This stage is responsible for:
+
+- downloading Gradle dependencies
+- compiling the application
+- running the Gradle build
+- creating the Spring Boot JAR
+
+After the build completes, only the generated JAR is copied into the runtime image.
+
+The runtime stage uses:
+
+```dockerfile
+FROM eclipse-temurin:21-jre-alpine
+```
+
+The final container includes only:
+
+```text
+Java Runtime (JRE)
++
+Spring Boot application JAR
+```
+
+It does not include:
+
+```text
+source code
+Gradle cache
+build files
+JDK compiler tools
+local project files
+```
+
+This keeps the production image:
+
+- smaller
+- faster to download
+- safer to run
+
+---
+
+### Apple Silicon / Intel Notes
+
+The default Alpine images support common platforms.
 
 If you see an error like:
 
@@ -130,10 +177,30 @@ If you see an error like:
 exec format error
 ```
 
-try changing the Dockerfile base image to:
+try changing the Docker base images from Alpine to standard images.
+
+Change:
 
 ```dockerfile
-FROM eclipse-temurin:21-jdk
+FROM eclipse-temurin:21-jdk-alpine AS build
+```
+
+to:
+
+```dockerfile
+FROM eclipse-temurin:21-jdk AS build
+```
+
+and:
+
+```dockerfile
+FROM eclipse-temurin:21-jre-alpine
+```
+
+to:
+
+```dockerfile
+FROM eclipse-temurin:21-jre
 ```
 
 Then rebuild:
@@ -145,7 +212,60 @@ docker compose up
 
 ---
 
-## 6. Common Commands
+## 6. Docker Build Context
+
+This project includes a `.dockerignore` file.
+
+The `.dockerignore` file prevents unnecessary or sensitive files from being sent to Docker during image builds.
+
+Excluded examples:
+
+```text
+.git
+.gradle
+build
+out
+target
+
+.idea
+.vscode
+*.iml
+
+.env
+.env.*
+
+docker-compose.yml
+docker-compose.prod.yml
+```
+
+Benefits:
+
+- prevents accidentally copying secrets into images
+- reduces Docker build context size
+- improves build performance
+- keeps generated images cleaner
+
+Only the required files are copied:
+
+```text
+gradlew
+gradle/
+build.gradle
+settings.gradle
+src/
+```
+
+The final Docker image contains only:
+
+```text
+app.jar
++
+Java runtime
+```
+
+---
+
+## 7. Common Commands
 
 ### Start Local Environment
 
@@ -180,7 +300,7 @@ docker compose logs -f db
 
 ---
 
-## 7. Troubleshooting
+## 8. Troubleshooting
 
 ### Database Does Not Exist
 
@@ -219,7 +339,7 @@ Do not use `localhost` inside the application container to connect to the databa
 
 ---
 
-## 8. Summary
+## 9. Summary
 
 Start the local environment:
 
@@ -238,3 +358,4 @@ Health Check:
 ```bash
 curl http://localhost:8080/health
 ```
+
