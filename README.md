@@ -183,10 +183,10 @@ Includes:
 
 Includes:
 
-- Request logging
-- Structured logs
-- Production-ready logging configuration
-
+- Request logging for API calls
+- Request ID tracing to follow requests across application logs
+- Structured `key=value` logs
+- Production-ready logging levels and console formatting
 
 ---
 
@@ -352,6 +352,7 @@ my-app/
 │   ├── entity/
 │   ├── config/
 │   ├── security/
+│   ├── filter/
 │   ├── exception/
 │   └── Application.java
 │

@@ -70,7 +70,7 @@ SpringGen Pro is currently available at launch pricing:
 $29 one-time purchase
 ```
 
-Future pricing may increase after launch.
+Pay once. Generate unlimited production-ready Spring Boot projects.
 
 ---
 

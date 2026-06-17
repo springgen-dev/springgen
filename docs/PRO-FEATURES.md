@@ -223,11 +223,12 @@ Developers should still review and customize security settings before deploying 
 
 Pro includes logging and observability foundations such as:
 
-* Request logging
-* Structured logging configuration
-* Production-friendly logging setup
+- Request logging for API calls with method, path, status, duration, and request ID
+- Request ID tracing to follow requests across application logs
+- Structured `key=value` logs for easier searching and debugging
+- Production logging profiles with configurable levels and console formatting
 
-These features help developers debug and monitor backend behavior in real environments.
+These features help developers debug, trace, and monitor backend behavior in real environments.
 
 ---
 
