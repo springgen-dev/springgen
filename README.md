@@ -23,6 +23,32 @@ SpringGen uses a deterministic template/module engine to assemble
 tested Spring Boot project structures, configurations, and production-ready components.
 
 ---
+
+## 🎥 Demo — Spring Boot + Docker + GitHub Actions + AWS EC2
+
+See SpringGen generate and deploy a production-ready Spring Boot application in minutes.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=DVhf8D_GSyI">
+    <img
+      src="https://img.youtube.com/vi/DVhf8D_GSyI/maxresdefault.jpg"
+      alt="SpringGen Demo"
+      width="650"
+    />
+  </a>
+</p>
+
+In this demo:
+
+✅ Generate a Spring Boot project  
+✅ Run locally with Docker Compose  
+✅ Configure GitHub Actions secrets  
+✅ Push code to trigger CI/CD  
+✅ Automatically deploys to AWS EC2  
+✅ Verify production health endpoint
+
+---
+
 ## How is SpringGen Different?
 
 ### vs Spring Initializr
@@ -82,7 +108,7 @@ SpringGen Pro unlocks unlimited production-ready Spring Boot backend generation 
 Choose:
 
 - Package name
-- Database (MySQL, PostgreSQL)
+- Production Database (PostgreSQL, MySQL)
 - Docker setup
 - CI/CD
 - Authentication (OAuth2 + refresh tokens)
@@ -216,25 +242,27 @@ Generate production-ready Spring Boot projects in minutes.
 
 ## Starter vs Pro
 
-| Feature                                  | Starter |                Pro |
-|------------------------------------------|--------:|-------------------:|
-| Price                                    |    Free | $29 launch pricing |
-| Spring Boot structure                    |       ✅ |                  ✅ |
-| Controller / Service / Repository layers |       ✅ |                  ✅ |
-| DTO structure                            |       ✅ |                  ✅ |
-| Global exception handling                |       ✅ |                  ✅ |
-| JWT authentication scaffold              |       ✅ |                  ✅ |
-| Database configuration                   |       ✅ |                  ✅ |
-| Dockerfile                               |       ✅ |                  ✅ |
-| Docker Compose local setup               |       ✅ |                  ✅ |
-| Basic GitHub Actions CI                  |       ✅ |                  ✅ |
-| OAuth2 authentication                    |       ❌ |                  ✅ |
-| Refresh token flow                       |       ❌ |                  ✅ |
-| Production configuration                 |       ❌ |                  ✅ |
-| AWS EC2 deployment automation            |       ❌ |                  ✅ |
-| Full CI/CD deployment workflow           |       ❌ |                  ✅ |
-| Logging and observability setup          |       ❌ |                  ✅ |
-| Security hardening                       |       ❌ |                  ✅ |
+| Feature                                  |  Starter |                Pro |
+|------------------------------------------|---------:|-------------------:|
+| Price                                    |     Free | $29 launch pricing |
+| Spring Boot structure                    |        ✅ |                  ✅ |
+| Controller / Service / Repository layers |        ✅ |                  ✅ |
+| DTO structure                            |        ✅ |                  ✅ |
+| Global exception handling                |        ✅ |                  ✅ |
+| JWT authentication scaffold              |        ✅ |                  ✅ |
+| Database configuration                   |        ✅ |                  ✅ |
+| PostgreSQL / MySQL support               |        ✅ |                  ✅ |
+| MongoDB support                          |        ✅ |                  ❌ |
+| Dockerfile                               |        ✅ |                  ✅ |
+| Docker Compose local setup               |        ✅ |                  ✅ |
+| Basic GitHub Actions CI                  |        ✅ |                  ✅ |
+| OAuth2 authentication                    |        ❌ |                  ✅ |
+| Refresh token flow                       |        ❌ |                  ✅ |
+| Production configuration                 |        ❌ |                  ✅ |
+| AWS EC2 deployment automation            |        ❌ |                  ✅ |
+| Full CI/CD deployment workflow           |        ❌ |                  ✅ |
+| Logging and observability setup          |        ❌ |                  ✅ |
+| Security hardening                       |        ❌ |                  ✅ |
 
 ---
 
@@ -262,12 +290,13 @@ npm install -g springgen
 springgen init my-app --db=postgres
 ```
 
-### Supported Databases
+### Supported Databases (Starter)
 
 ```bash
 --db=postgres
 --db=mysql
 --db=mongo
+--db=none
 ```
 
 ### Run the Generated Project
@@ -430,6 +459,17 @@ Available inside generated Pro projects.
 
 ---
 
+## 📚 Articles & Guides
+
+Technical deep dives behind the problems SpringGen helps automate:
+
+- [Deploying Spring Boot to AWS EC2 with Docker and GitHub Actions — The Repeatable Way](https://dev.to/yadrs/deploying-spring-boot-to-aws-ec2-with-docker-and-github-actions-the-repeatable-way-55bi)
+- [Spring Boot Authentication Beyond the Basics — OAuth2, JWT, and Refresh Tokens in Production](https://medium.com/p/f897fbfeb72a)
+- [Dockerizing Spring Boot for Local and Production Environments — The Setup You’ll Rebuild Every Time](https://dev.to/yadrs/dockerizing-spring-boot-for-local-and-production-environments-the-setup-youll-rebuild-every-time-5dn7)
+- [GDPR Compliance in a Spring Boot App — The Implementation Nobody Talks About](https://dev.to/yadrs/gdpr-compliance-in-a-spring-boot-app-the-implementation-nobody-talks-about-1j40)
+
+---
+
 ## Examples
 
 Example resources:
@@ -449,7 +489,7 @@ examples/
 └── generated-structure.md
 ```
 
-## Business Model
+## SpringGen Editions
 
 SpringGen provides a free Starter generator and a paid Pro upgrade.
 
@@ -460,22 +500,31 @@ SpringGen provides a free Starter generator and a paid Pro upgrade.
 
 ---
 
-## Roadmap
+## 🗺 Roadmap
 
 Planned future improvements:
 
-* IntelliJ IDEA plugin
-* Microservices starter
-* Redis module
-* Additional OAuth providers
-* Team features
-* More deployment targets
-* More database options
-* Advanced observability modules
+### Developer Experience
+- IntelliJ IDEA plugin
+- More project customization options
+- Additional Spring Boot modules
 
+### Infrastructure & Deployment
+- Terraform support
+- AWS CloudFormation support
+- Amazon ECS deployment support
+- Advanced CI/CD templates
 
+### Team & Scale Features
+- Multi-module workspace generator
+- API Gateway service generation
+- Shared infrastructure templates
+- Multi-environment support (dev/staging/prod)
+- Database migrations with Flyway
+- Advanced logging, metrics, and observability modules
 
 ---
+
 ## Support
 
 For support, 
@@ -496,7 +545,6 @@ The preview CLI projects are provided for transparency and local exploration.
 The production SpringGen backend, web application, billing integration, deployment infrastructure, Pro templates, and commercial generation modules are maintained privately.
 
 The published npm package and hosted SpringGen platform are operated from the private production repository.
-
 
 ---
 

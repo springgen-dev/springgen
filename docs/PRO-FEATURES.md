@@ -1,6 +1,8 @@
 # Pro Features
 
-SpringGen Pro unlocks production-focused project generation features for developers building deployable Spring Boot backend systems.
+SpringGen Pro unlocks unlimited production-ready Spring Boot backend generation — create as many projects as you need with authentication, database, security, deployment, and DevOps configuration ready to go.
+
+**Pay once. Generate unlimited production-ready Spring Boot projects.**
 
 Pro is available through the SpringGen web app:
 
@@ -17,8 +19,6 @@ SpringGen Pro is currently available at launch pricing:
 ```text
 $29 one-time purchase
 ```
-
-Future pricing may increase after launch.
 
 ---
 
