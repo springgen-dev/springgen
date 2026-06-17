@@ -29,7 +29,7 @@ tested Spring Boot project structures, configurations, and production-ready comp
 See SpringGen generate and deploy a production-ready Spring Boot application in minutes.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=DVhf8D_GSyI">
+  <a href="https://www.youtube.com/watch?v=aia1CAW5hrw">
     <img
       src="https://img.youtube.com/vi/DVhf8D_GSyI/maxresdefault.jpg"
       alt="SpringGen Demo"
@@ -349,8 +349,10 @@ my-app/
 │   ├── service/
 │   ├── repository/
 │   ├── dto/
+│   ├── entity/
 │   ├── config/
 │   ├── security/
+│   ├── exception/
 │   └── Application.java
 │
 ├── src/main/resources/
