@@ -29,7 +29,7 @@ tested Spring Boot project structures, configurations, and production-ready comp
 See SpringGen generate and deploy a production-ready Spring Boot application in minutes.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=aia1CAW5hrw">
+  <a href="https://www.youtube.com/watch?v=FoQvdnamsqs">
     <img
       src="https://img.youtube.com/vi/DVhf8D_GSyI/maxresdefault.jpg"
       alt="SpringGen Demo"
@@ -99,7 +99,7 @@ SpringGen may not be ideal for:
 
 Stop rebuilding the same production setup for every Spring Boot project.
 
-SpringGen Pro unlocks unlimited production-ready Spring Boot backend generation — create as many projects as you need with authentication, database, security, deployment, and DevOps configuration ready to go.
+SpringGen Pro unlocks unlimited Spring Boot backend generation — create as many projects as you need with authentication, database, security, deployment, and DevOps configuration ready to go.
 
 **Pay once. Generate unlimited production-ready Spring Boot projects.**
 
@@ -124,7 +124,10 @@ Generate production-ready Spring Security:
 - GitHub OAuth2 login
 - JWT access tokens
 - Refresh token flow
-
+- Persistent user storage
+- Persistent refresh tokens
+- Sample secured endpoints
+- Swagger API Testing
 
 ### 🐳 Production Docker Setup
 
@@ -163,7 +166,9 @@ Handles:
 
 - Docker builds
 - Application updates
-- Container restarts
+- Container cleanup
+- Restart policies
+- Resource limits
 
 Use it through GitHub Actions or run manually on EC2.
 
@@ -173,20 +178,21 @@ Use it through GitHub Actions or run manually on EC2.
 Includes:
 
 - CORS configuration
-- Secure headers
+- Security headers
 - Request filtering
-- Validation
-- Production security defaults
-
+- Stateless JWT authentication
+- Protected endpoints
+- Production-focused security structure
 
 ### 📊 Logging & Observability
 
 Includes:
 
 - Request logging for API calls
-- Request ID tracing to follow requests across application logs
-- Structured `key=value` logs
-- Production-ready logging levels and console formatting
+- Request ID tracing across application logs
+- Structured `key=value` console logs
+- Production-ready logging levels
+- Docker and cloud-friendly log output
 
 ---
 
@@ -237,6 +243,8 @@ Generate production-ready Spring Boot projects in minutes.
 👉 https://app.springgen.dev
 
 **$29 one-time launch pricing**
+
+See more details : [PRO-FEATURES.md](./docs/PRO-FEATURES.md)
 
 ---
 
