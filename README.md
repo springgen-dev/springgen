@@ -31,7 +31,7 @@ See SpringGen generate and deploy a production-ready Spring Boot application in 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=FoQvdnamsqs">
     <img
-      src="https://img.youtube.com/vi/DVhf8D_GSyI/maxresdefault.jpg"
+      src="https://img.youtube.com/vi/FoQvdnamsqs/maxresdefault.jpg"
       alt="SpringGen Demo"
       width="650"
     />
@@ -53,23 +53,37 @@ In this demo:
 
 ### vs Spring Initializr
 
-Spring Initializr gives you a project foundation — dependencies, build files, and a basic application entry point. 
+Spring Initializr gives you a project foundation — dependencies, build files, and a basic application entry point.
 
 SpringGen starts where Initializr stops:
-* Layered architecture with controllers, services, repositories
-* DTO patterns and global exception handling
-* Database configuration
-* Authentication scaffolding (JWT, OAuth2)
-* Security hardening
-* Docker, CI/CD, and AWS deployment configuration
+
+- Layered architecture with controllers, services, repositories
+- DTO patterns and global exception handling
+- Database configuration
+- Authentication setup (JWT, OAuth2)
+- Production security configuration
+- Docker, CI/CD, and AWS deployment configuration
+
+Initializr helps you start a Spring Boot project.
+
+SpringGen helps you start a production-ready Spring Boot backend.
 
 ### vs JHipster
 
 JHipster is a full-stack generator — frontend, backend, and ongoing project management through its ecosystem. Powerful if you want a complete application platform with built-in conventions.
 
-**SpringGen is backend-only and disappears after generation.** No frontend opinions, no generator runtime dependencies left in your project, no new ecosystem to learn. Just clean, standard Spring Boot code you recognize and own from day one.
+SpringGen generates a standard Spring Boot project and then gets out of the way:
 
-> SpringGen sits between Initializr and JHipster — more structure than one, less ecosystem than the other.
+- No frontend opinions
+- No generator runtime dependencies
+- No custom framework APIs
+- No new ecosystem to learn
+
+After generation, the code is yours — a normal Spring Boot application you can modify, deploy, and maintain however you want.
+
+SpringGen sits between Initializr and JHipster:
+
+> More structure than Initializr. Less ecosystem commitment than JHipster.
 
 ---
 
