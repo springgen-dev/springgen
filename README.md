@@ -1,6 +1,6 @@
-# SpringGen — Generate Spring Boot Backends in Minutes 🚀  [![npm](https://img.shields.io/npm/v/springgen)](https://www.npmjs.com/package/springgen) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+# SpringGen — Generate Spring Boot Projects in Minutes 🚀  [![npm](https://img.shields.io/npm/v/springgen)](https://www.npmjs.com/package/springgen) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Generate production-ready Spring Boot backends instantly — Authentication, Database, Docker, CI/CD, and AWS EC2 deployment included.
+with production-ready Spring Boot backends — Authentication, Database, Docker, CI/CD, and AWS EC2 deployment.
 
 👉 **[Try Free via CLI](#try-springgen-free-starter-cli)** •
 🚀 **[Upgrade to Pro](https://app.springgen.dev)**
@@ -46,6 +46,8 @@ In this demo:
 ✅ Push code to trigger CI/CD  
 ✅ Automatically deploys to AWS EC2  
 ✅ Verify production health endpoint
+
+For Part 2 : [Spring Boot OAuth2 + JWT Access Tokens & Refresh Tokens in Minutes | SpringGen Part 2](https://www.youtube.com/watch?v=idcR3RMNizI)
 
 ---
 
