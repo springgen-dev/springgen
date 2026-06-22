@@ -488,9 +488,11 @@ Available inside generated Pro projects.
 
 Technical deep dives behind the problems SpringGen helps automate:
 
-- [Deploying Spring Boot to AWS EC2 with Docker and GitHub Actions — The Repeatable Way](https://dev.to/yadrs/deploying-spring-boot-to-aws-ec2-with-docker-and-github-actions-the-repeatable-way-55bi)
+- [How to Structure Spring Boot Projects Beyond Spring Initializr](https://dev.to/yadrs/how-to-structure-spring-boot-projects-beyond-spring-initializr-fac)
 - [Spring Boot Authentication Beyond the Basics — OAuth2, JWT, and Refresh Tokens in Production](https://medium.com/p/f897fbfeb72a)
 - [Dockerizing Spring Boot for Local and Production Environments — The Setup You’ll Rebuild Every Time](https://dev.to/yadrs/dockerizing-spring-boot-for-local-and-production-environments-the-setup-youll-rebuild-every-time-5dn7)
+- [Deploying Spring Boot to AWS EC2 with Docker and GitHub Actions — The Repeatable Way](https://dev.to/yadrs/deploying-spring-boot-to-aws-ec2-with-docker-and-github-actions-the-repeatable-way-55bi)
+- [AWS EC2 vs ECS for Spring Boot Deployment — When Should You Use Which?](https://dev.to/yadrs/ec2-vs-ecs-for-spring-boot-deployment-when-should-you-use-which-30ld)
 - [GDPR Compliance in a Spring Boot App — The Implementation Nobody Talks About](https://dev.to/yadrs/gdpr-compliance-in-a-spring-boot-app-the-implementation-nobody-talks-about-1j40)
 
 ---
