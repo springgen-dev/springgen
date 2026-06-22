@@ -1,9 +1,9 @@
-# SpringGen — Generate Spring Boot Projects in Minutes 🚀  [![npm](https://img.shields.io/npm/v/springgen)](https://www.npmjs.com/package/springgen) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+# SpringGen — Generate Production-Ready Spring Boot Projects in Minutes 🚀  [![npm](https://img.shields.io/npm/v/springgen)](https://www.npmjs.com/package/springgen) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-with production-ready Spring Boot backends — Authentication, Database, Docker, CI/CD, and AWS EC2 deployment.
+from local development setup to production deployment foundation — Authentication, Database, Docker, CI/CD, and AWS EC2 deployment included.
 
-👉 **[Try Free via CLI](#try-springgen-free-starter-cli)** •
-🚀 **[Upgrade to Pro](https://app.springgen.dev)**
+👉 **[Try Starter via CLI](https://www.npmjs.com/package/springgen)** •
+🌐 **[Try all via Web UI](https://app.springgen.dev)**
 
 ---
 
