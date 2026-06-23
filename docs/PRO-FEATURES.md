@@ -187,31 +187,35 @@ These files are intended for production-style environments where secrets and dat
 
 ## CI/CD
 
-Pro includes GitHub Actions workflows for build and deployment.
+Pro includes a GitHub Actions CI/CD workflow for build validation and automated deployment.
 
-Example workflow structure:
+Generated workflow:
 
 ```text
 .github/workflows/
-├── ci.yml
-└── cd.yml
+└── ci-cd.yml
 ```
 
-### CI Workflow
+### Build Job
 
-The CI workflow generally handles:
+The build job handles:
 
 * Build
-* Test
-* Validation
+* Tests
+* Application validation
 
-### CD Workflow
+### Deployment Job
 
-The CD workflow generally handles:
+After a successful build, the deployment job handles:
 
-* Production environment setup
-* Remote deployment
-* Docker build/run on target environment
+* Secure deployment using GitHub Secrets
+* Production environment configuration generation
+* Remote EC2 deployment over SSH
+* Docker build/run on the target environment
+
+Pull requests only run validation.
+
+Deployments run only after successful builds on the configured deployment branch.
 
 ---
 

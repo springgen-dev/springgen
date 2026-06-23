@@ -14,7 +14,7 @@ database config, security hardening, Docker, and CI/CD pipeline. Most developers
 from scratch or copy-paste from a previous project every single time.
 
 SpringGen is built around that repeated workflow. Whether you are a freelancer spinning up a new client backend,
-a founder building an MVP, or a developer starting another microservice — run the CLI or web UI, get a
+a founder building an MVP, or a developer starting another backend service — run the CLI or web UI, get a
 consistent production-ready backend, and start writing business logic.
 
 No copy-pasting. No forgotten configs. No "how did I set this up last time."
@@ -43,8 +43,8 @@ In this demo:
 ✅ Generate a Spring Boot project  
 ✅ Run locally with Docker Compose  
 ✅ Configure GitHub Actions secrets  
-✅ Push code to trigger CI/CD  
-✅ Automatically deploys to AWS EC2  
+✅ Push code to trigger the CI/CD workflow
+✅ Automatically deploy to AWS EC2 after successful build 
 ✅ Verify production health endpoint
 
 For Part 2 : [Spring Boot OAuth2 + JWT Access Tokens & Refresh Tokens in Minutes | SpringGen Part 2](https://www.youtube.com/watch?v=idcR3RMNizI)
@@ -98,7 +98,7 @@ Ideal for:
 * Backend developers building SaaS products
 * Freelancers starting new client projects
 * Startup founders creating MVP backends
-* Engineers building multiple microservices
+* Engineers building multiple backend services or APIs
 * Developers who want consistent project structure across projects
 * Java/Spring developers who prefer writing business logic over repeating setup
 
@@ -162,10 +162,11 @@ Push code.
 
 GitHub Actions automatically:
 
-- Builds your application
-- Creates production configuration
-- Connects to EC2
-- Deploys your Docker application
+- Validates your application before deployment
+- Connects securely to EC2
+- Creates production configuration from GitHub Secrets
+- Runs the deployment script
+- Builds and deploys your Docker application
 
 
 ### 🖥️ Generated EC2 Deploy Script
@@ -225,9 +226,11 @@ GitHub Secrets
    ↓
 Git Push
    ↓
-GitHub Actions
+GitHub Actions CI/CD Workflow
    ↓
-EC2
+Build + Test
+   ↓
+Deploy to EC2
    ↓
 Docker Application Running
 ```
@@ -389,8 +392,8 @@ my-app/
 ├── docker-compose.prod.yml           # Pro
 │
 ├── .github/workflows/
-│   ├── ci.yml
-│   └── cd.yml                        # Pro
+│   ├── ci.yml                        # Starter
+│   └── ci-cd.yml                     # Pro
 │
 ├── scripts/
 │   └── deploy-ec2.sh                 # Pro
