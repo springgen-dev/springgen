@@ -3,7 +3,7 @@
 from local development setup to production deployment foundation — Authentication, Database, Docker, CI/CD, and AWS EC2 deployment included.
 
 👉 **[Try Starter via CLI](https://www.npmjs.com/package/springgen)** •
-🌐 **[Try all via Web UI](https://app.springgen.dev)**
+🌐 **[Try All via Web UI](https://app.springgen.dev)**
 
 ---
 
@@ -24,6 +24,45 @@ tested Spring Boot project structures, configurations, and production-ready comp
 
 ---
 
+## 🧱 Generated Tech Stack
+
+SpringGen generates modern Spring Boot applications using:
+
+### Backend
+
+- Java 21
+- Spring Boot 4
+- Gradle
+- Spring Data JPA / Hibernate
+- PostgreSQL / MySQL
+- MongoDB support (Starter)
+
+
+### Authentication & Security
+
+- Spring Security 7
+- JWT authentication scaffold (Starter)
+- OAuth2 login with Google & GitHub (Pro)
+- JWT access tokens & refresh tokens (Pro)
+- Security headers and production hardening (Pro)
+
+
+### API & Observability
+
+- Swagger / OpenAPI (Pro)
+- Request logging & observability (Pro)
+
+
+### DevOps & Deployment
+
+- Docker
+- Docker Compose
+- GitHub Actions CI (Starter)
+- GitHub Actions CI/CD deployment workflow (Pro)
+- AWS EC2 deployment automation (Pro)
+
+---
+
 ## 🎥 Demo — Spring Boot + Docker + GitHub Actions + AWS EC2
 
 See SpringGen generate and deploy a production-ready Spring Boot application in minutes.
@@ -40,12 +79,12 @@ See SpringGen generate and deploy a production-ready Spring Boot application in 
 
 In this demo:
 
-✅ Generate a Spring Boot project  
-✅ Run locally with Docker Compose  
-✅ Configure GitHub Actions secrets  
-✅ Push code to trigger the CI/CD workflow
-✅ Automatically deploy to AWS EC2 after successful build 
-✅ Verify production health endpoint
+- Generate a Spring Boot project  ✅
+- Run locally with Docker Compose  ✅
+- Configure GitHub Actions secrets  ✅
+- Push code to trigger the CI/CD workflow ✅
+- Automatically deploy to AWS EC2 after successful build ✅
+- Verify production health endpoint ✅
 
 For Part 2 : [Spring Boot OAuth2 + JWT Access Tokens & Refresh Tokens in Minutes | SpringGen Part 2](https://www.youtube.com/watch?v=idcR3RMNizI)
 
@@ -537,23 +576,31 @@ SpringGen provides a free Starter generator and a paid Pro upgrade.
 Planned future improvements:
 
 ### Developer Experience
+
 - IntelliJ IDEA plugin
 - More project customization options
 - Additional Spring Boot modules
 
 ### Infrastructure & Deployment
-- Terraform support
-- AWS CloudFormation support
-- Amazon ECS deployment support
-- Advanced CI/CD templates
 
-### Team & Scale Features
+Improvements planned for existing generation workflows:
+
+- AWS CloudFormation support
+- Additional deployment templates
+
+### Future Team & Scale Tiers
+
+Planned capabilities for larger projects and teams:
+
 - Multi-module workspace generator
 - API Gateway service generation
 - Shared infrastructure templates
 - Multi-environment support (dev/staging/prod)
 - Database migrations with Flyway
-- Advanced logging, metrics, and observability modules
+- Terraform infrastructure generation
+- Amazon ECS deployment support
+- Advanced CI/CD strategies
+- Advanced monitoring and observability integrations
 
 ---
 
